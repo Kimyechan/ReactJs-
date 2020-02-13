@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 class TOC extends Component {
-    shouldComponentUpdate(newProps, newState){
+    shouldComponentUpdate(newProps, newState) {
         console.log("====>TOC render shouldComponentUpdate"
-        ,newProps.data
-        ,this.props.data
+            , newProps.data
+            , this.props.data
         );
-        if(this.props.data === newProps.data){
+        if (this.props.data === newProps.data) {
             return false;
         }
         return true;
